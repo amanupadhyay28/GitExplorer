@@ -29,9 +29,7 @@ const Users = () => {
               className="user-avatar"
             />
             <span className="username">{user.login}</span>
-            <Link to={`/users/user/${user.login}`} className="view-btn">
-              View User
-            </Link>
+          <button onClick={()=>navigate(`/users/user/${user.login}`)} className="view-btn">View User</button>
           </div>
         ))}
       </div>
