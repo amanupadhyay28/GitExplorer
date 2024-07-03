@@ -29,12 +29,9 @@ const Users = () => {
               className="user-avatar"
             />
             <span className="username">{user.login}</span>
-            <button
-              onClick={() => navigate(`/users/user/${user.login}`)}
-              className="view-btn"
-            >
+            <Link to={`/users/user/${user.login}`} className="view-btn">
               View User
-            </button>
+            </Link>
           </div>
         ))}
       </div>
