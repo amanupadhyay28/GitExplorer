@@ -9,6 +9,7 @@ import Navbar from "./components/Navbar";
 import NotFound from "./components/Notfound";
 import UserProfile from "./components/UserProfile";
 import SearchUser from "./components/SearchUser";
+import Login from "./components/Login";
 
 const App = () => {
   return (
@@ -17,8 +18,10 @@ const App = () => {
         <Route exact path="/" element={<Home />} />
         <Route path="/Profile" element={<Aboutus />} />
         <Route path="/users" element={<Users />} />
+
         <Route element={<UserProfile />} path="/users/user/:username" />
         <Route element={<SearchUser />} path="/search" />
+        <Route element={<Login />} path="/login" />
       </Route>
       <Route path="*" element={<NotFound />}></Route>
     </Routes>
