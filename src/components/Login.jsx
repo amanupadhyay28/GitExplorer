@@ -7,7 +7,7 @@ const login = ({ setIsLogged, setUsername }) => {
   const [errMsg, setErrorMsg] = useState("");
   const navigate = useNavigate();
   const dummyUserObject = {
-    username: "aman",
+    username: "amanupadhyay28",
     password: "12345",
   };
   const handleLogin = (e) => {
