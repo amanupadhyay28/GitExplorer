@@ -12,8 +12,13 @@ const Navbar = ({ isLogged }) => {
           <Link to={"/"}>Repos</Link>
           <Link to={"/users"}>Users</Link>
           <Link to={"/search"}>Search</Link>
-          <Link to={"/authProfile"}>Profile</Link>
-          {!isLogged && <Link to={"/login"}>Login</Link>}
+          <Link to={"/aboutus"}>AboutUs</Link>
+
+          {isLogged ? (
+            <Link to={"/authProfile"}>Profile</Link>
+          ) : (
+            <Link to={"/login"}>Login</Link>
+          )}
         </div>
       </nav>
       <Outlet />
