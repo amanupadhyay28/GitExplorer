@@ -93,10 +93,8 @@ nav {
 .user-card-cont:hover {
   /* border:2px solid gray; */
   box-shadow: 0 4px 8px rgba(0, 0, 255, 0.3);
-
-  //hello i am in master main style css
-  // hello again i am in master main style css
-  //you changed the file in main .css
+  //hello i am in ui changes brach
+  //hello you changed the style.css in branch uiChanges
 }
 .user-avatar {
   width: 70%;
