@@ -47,9 +47,10 @@ nav {
 }
 
 .repo-lang-span {
-  color: orangered;
+  color: blue;
   font-size: 14px;
   margin-bottom: 5px;
+  font-weight:500;
 }
 .name-cont {
   flex: 1;
@@ -58,7 +59,7 @@ nav {
   justify-content: center;
 }
 .repo-owner {
-  color: lightpink;
+  color: blue;
   margin-bottom: 5px;
   cursor: pointer;
 }
@@ -80,14 +81,20 @@ nav {
 /* ///// */
 
 .user-card-cont {
+
   display: flex;
   justify-content: center;
   align-items: center;
   width: 20%;
+  gap:15px;
   padding: 10px;
+  margin:auto;
   flex-direction: column;
 }
-
+.user-card-cont:hover{
+  /* border:2px solid gray; */
+  box-shadow: 0 4px 8px rgba(0, 0, 255, 0.3);
+}
 .user-avatar {
   width: 70%;
 }
